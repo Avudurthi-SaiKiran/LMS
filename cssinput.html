@@ -168,7 +168,7 @@
     <script>
         // backbutton
         function goBack() {
-    window.location.href = "index.html";
+    window.location.href = "courses.html";
   }
         // Get DOM elements
         const dayButtons = document.getElementById('day-buttons');
@@ -287,6 +287,15 @@ allDaysButton.addEventListener('click', () => {
 
         // Initially display content for Day 1
         displayDayContent(0);
+    
+    // Disable right-click context menu
+
+document.addEventListener("contextmenu", function (e) {
+
+e.preventDefault();
+
+});
+    
     </script>
 </body>
 </html>
